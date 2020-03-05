@@ -1,11 +1,16 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
+import configData from './modules/configData'
+import cards from './modules/cards'
+import auth from './modules/auth'
+
+Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
-});
+  modules: {
+    configData,
+    cards,
+    auth
+  }
+})
